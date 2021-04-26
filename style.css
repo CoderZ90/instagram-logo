@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #f3f4f6;
+    display: grid;
+    place-items: center;
+}
+.instaLogo
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 30% 107%, #faf497, 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: -15px 15px 15px rgba(255,255,255,0.5),
+                15px 15px 15px rgba(0,0,0,0.15),
+                inset 4px 4px 5px rgba(255,255,255,0.5),
+                inset -4px -4px 4px rgba(0,0,0,0.05),
+                0 50px 50px rgba(0,0,0,0.05);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+}
+.square
+{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: transparent;
+    border: 10px solid #fff;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+}
+.square::after
+{
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    border: 8px solid #fff;
+    border-radius: 50px;
+}
+.square::before
+{
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    /* border: 8px solid #fff; */
+    border-radius: 50px;
+    background: #fff;
+}
